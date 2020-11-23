@@ -1,0 +1,14 @@
+{
+    "current_page": 1,
+    "data": [],
+    "first_page_url": "https:\/\/local.awema.pl:4443\/packages?page=1",
+    "from": null,
+    "last_page": 1,
+    "last_page_url": "https:\/\/local.awema.pl:4443\/packages?page=1",
+    "next_page_url": null,
+    "path": "https:\/\/local.awema.pl:4443\/packages",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": null,
+    "total": 0
+}

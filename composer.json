@@ -1,0 +1,52 @@
+{
+    "name": "awema-pl/module-table-builder",
+    "description": "A component that allows creating responsive HTML tables or lists from data object",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karol Golec",
+            "email": "karolgolec10@gmail.com",
+            "homepage": "https://github.pl/awema-pl/module-table-builder",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "karolgolec10@gmail.com"
+    },
+    "homepage": "https://github.com/awema-pl/module-table-builder",
+    "keywords": [
+        "Laravel",
+        "Table Builder",
+        "table",
+        "table builder",
+        "vue",
+        "vuejs",
+        "awema-pl"
+    ],
+    "require": {
+        "illuminate/support": "~5|~6|~7|~8|~9"
+    },
+    "autoload": {
+        "psr-4": {
+            "AwemaPL\\TableBuilder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AwemaPL\\TableBuilder\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AwemaPL\\TableBuilder\\TableBuilderServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

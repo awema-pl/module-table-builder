@@ -1,0 +1,135 @@
+flex-version = flex
+support-for-ie = false
+vendor-prefixes = official
+
+@keyframes rotate
+    from
+        transform: none
+    to
+        transform: rotate(1turn)
+
+
+.int-table
+    // position: relative
+
+    // &.is-loading
+    //     .int-table
+    //         &__table,
+    //         &__list,
+    //         &__no-data
+    //             opacity: .5
+    //             user-select: none
+    //             pointer-events: none
+
+    // &__loader
+    //     position: absolute
+    //     z-index: 2
+    //     top: 50%
+    //     left: 50%
+    //     transform: translate(-50%, -50%)
+    //     padding: 1rem
+    //     padding-left: 40px
+    //     background-color: lightgray
+
+    //     &:before
+    //         content: ''
+    //         display: block
+    //         size 20px
+    //         position: absolute
+    //         left: 10px
+    //         top: 50%
+    //         margin-top: -10px
+    //         border-left: 2px solid currentColor
+    //         border-top: 2px solid currentColor
+    //         border-radius: 50%
+    //         animation rotate 1s linear infinite
+
+
+    &__table
+        width 100%
+        border-collapse: collapse
+
+        thead td,
+        thead th
+            padding: .5em
+            text-align: left
+
+        tbody td
+            padding: .5em
+            border-bottom: 1px solid
+
+        //tr:hover
+        //    background gray
+        //    color white
+
+    &__no-data
+        display: flex
+        min-height: 70vh
+        align-items: center
+        justify-content: center
+
+    & &__block
+        &.active
+            td
+                border-bottom: none
+        &.is-link
+            cursor: pointer
+
+    & &__nowrap
+        white-space: nowrap
+
+    &__control-tab
+        text-align: center
+        width: 40px
+
+    & &__show
+        border: 1px solid currentColor
+        padding: 5px
+        text-decoration: none
+
+        > i:before
+            content: '▼'
+
+    &__list
+        margin: auto
+        max-width: 600px
+
+        &-row
+            border-bottom: 1px solid currentColor
+            padding: 1em
+            margin-bottom: 1em
+
+        &-cell
+            margin-bottom: .5em
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+
+        &-name
+            text-transform: capitalize
+
+    &__overflow
+        overflow-x auto
+        max-width 100%
+        position relative
+        background:
+            linear-gradient(90deg, white 16px, rgba(255,255,255,0)),
+            linear-gradient(90deg, rgba(255,255,255,0), white 16px) 100% 0,
+            radial-gradient(farthest-side at 0 50%, rgba(0,0,0,.2), rgba(0,0,0,0)),
+            radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 100% 0;
+        background-repeat no-repeat
+        background-color white
+        background-size 48px 100%, 48px 100%, 16px 100%, 16px 100%
+        background-attachment local, local, scroll, scroll
+
+
+.pager
+    margin-top: 30px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &.is-loading
+        opacity: .5
+        user-select: none
+        pointer-events: none
