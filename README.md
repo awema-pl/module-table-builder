@@ -81,3 +81,4 @@ php artisan vendor:publish --provider="AwemaPL\TableBuilder\Providers\TableBuild
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+ 
